@@ -1,0 +1,67 @@
+/* Базовые стили */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    padding: 20px;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Тёмная и светлая темы */
+body.dark {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.light {
+    background: #ffffff;
+    color: #222222;
+}
+
+/* Контейнер */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Заголовок */
+h1 {
+    color: var(--tg-theme-text-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Информация о пользователе */
+.user-info {
+    background: var(--tg-theme-secondary-bg-color);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* Адаптация под разные экраны */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+}
